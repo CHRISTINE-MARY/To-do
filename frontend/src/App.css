@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+}
+* {
+  transition: all 0.2s ease;
+}
+
+body {
+  background-color: black;
+}
+
+.calendar {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+.calendar select {
+  border: none;
+  background-color: rgb(255, 1, 111);
+  color: white;
+  margin: 10px;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.swiper {
+  max-width: 50%;
+}
+.swiper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  max-width: 50%;
+}
+.swiper-container button {
+  height: 30%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.swiper-container .swiper-slide {
+  border-radius: 50%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  cursor: pointer;
+  color: white;
+}
+.task-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.task-box ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.task-box ul li {
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  background-color: #fbff03;
+  padding: 15px;
+  border-radius: 15px;
+  align-items: center;
+  width: 400px;
+  font-weight: 600;
+  font-size: large;
+}
+.task-box ul li .btns {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.task-box ul li .task {
+  word-wrap: break-word;
+  width: 50%;
+}
+
+.task-box .Add-btn {
+  background: none;
+  border: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top of other components */
+}
+
+.pop-up {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(251, 55, 163);
+  padding: 30px;
+  width: 30%;
+  gap: 30px;
+  border-radius: 20px;
+}
+.pop-up .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+.pop-up .top button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.pop-up .bottom input[type="text"] {
+  height: 50px;
+  width: 350px;
+  border-radius: 19px;
+  font-size: x-large;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+.pop-up .bottom input[type="submit"] {
+  background: none;
+  border: 1px solid rgb(70, 248, 70);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+.pop-up .bottom input[type="submit"]:hover {
+  background-color: rgb(70, 248, 70);
+}
+.pop-up .top {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
