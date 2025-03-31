@@ -17,7 +17,7 @@ To do app is a task creator application built using the MERN (MongoDB, Express.j
 
 ### 1️⃣ Clone the Repository  
 ```sh
-git clone https://github.com/YOUR_USERNAME/To-do.git
+git clone https://github.com/CHRISTINE-MARY/To-do.git
 cd To-do
 ```
 
